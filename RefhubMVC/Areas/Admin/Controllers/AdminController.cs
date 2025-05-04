@@ -2,9 +2,10 @@
 
 namespace RefhubMVC.Areas.Admin.Controllers
 {
+
+    [Area("Admin")]
     public class AdminController : Controller
     {
-        [Area("Admin")]
         public IActionResult DashBoard()
         {
             return View();

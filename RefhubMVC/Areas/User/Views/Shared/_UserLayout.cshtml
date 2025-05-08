@@ -1,0 +1,47 @@
+﻿
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+	<title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+
+	<!-- Meta Tags -->
+	<partial name="Partial/_MetaTag" />
+
+	<partial name="Partial/_Script" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="~/assets/images/favicon.ico">
+
+	<partial name="Partial/_cssHead" />
+
+</head>
+
+<body>
+
+	<!-- Header START -->
+	<partial name="Partial/_Header" />
+	<!-- Header END -->
+	<!-- **************** MAIN CONTENT START **************** -->
+	@RenderBody()
+	<!-- **************** MAIN CONTENT END **************** -->
+	<!-- Footer START -->
+	<partial name="Partial/_Footer" />
+	<!--Footer END -->
+	<!-- Back to top -->
+	<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+
+	<!-- Bootstrap JS -->
+	<script src="~/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Vendors -->
+	<script src="~/assets/vendor/choices/js/choices.min.js"></script>
+	<script src="~/assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
+	<script src="~/assets/vendor/aos/aos.js"></script>
+
+	<!-- Template Functions -->
+	<script src="~/assets/js/functions.js"></script>
+
+</body>
+
+</html>

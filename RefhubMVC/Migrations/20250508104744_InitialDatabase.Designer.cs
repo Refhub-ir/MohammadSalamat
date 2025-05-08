@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RefhubMVC.DB_context;
 
@@ -10,9 +11,11 @@ using RefhubMVC.DB_context;
 namespace RefhubMVC.Migrations
 {
     [DbContext(typeof(Refhub_db))]
-    partial class Refhub_dbModelSnapshot : ModelSnapshot
+    [Migration("20250508104744_InitialDatabase")]
+    partial class InitialDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

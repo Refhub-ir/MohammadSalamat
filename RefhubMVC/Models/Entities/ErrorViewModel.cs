@@ -1,4 +1,4 @@
-namespace RefhubMVC.Models;
+namespace RefhubMVC.Models.Entities;
 
 public class ErrorViewModel
 {
